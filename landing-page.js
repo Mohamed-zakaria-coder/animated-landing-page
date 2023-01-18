@@ -121,6 +121,7 @@ loader.load("./model/scene.gltf", (gltf) => {
         delay: 0.5,
       });
     } else {
+      
       gsap.to(model.scale, {
         x: 40,
         y: 40,
