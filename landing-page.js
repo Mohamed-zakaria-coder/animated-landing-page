@@ -83,7 +83,7 @@ loader.load("./model/scene.gltf", (gltf) => {
         duration: 1,
         delay: 0.5,
       });
-    } else if (this.window.innerWidth > 769) {
+    } else if (window.innerWidth > 769) {
       gsap.to(model.scale, {
         x: 100,
         y: 100,
