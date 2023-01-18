@@ -17,14 +17,6 @@ loader.load("./model/scene.gltf", (gltf) => {
     x: -6,
     duration: 0,
   });
-  // gsap.to(model.scale, {
-  //     x: 80,
-  //     y: 80,
-  //     z: 80,
-  //     duration: 2,
-  //     ease: "back.out(1.7)"
-  //   });
-
   gsap.to(model.rotation, {
     y: 5.7,
     duration: 1,
@@ -41,14 +33,6 @@ loader.load("./model/scene.gltf", (gltf) => {
     duration: 1,
     delay: 0.5,
   });
-  // gsap.to(model.scale, {
-  //   x: 100,
-  //   y: 100,
-  //   z: 100,
-  //   duration: 1,
-  //   delay: 2,
-  //   ease: "back.out(1.7)"
-  // });
   if (window.innerWidth < 768 && window.innerWidth > 550) {
     gsap.to(model.scale, {
       x: 60,

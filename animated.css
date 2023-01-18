@@ -28,11 +28,8 @@ canvas {
 @media (max-width: 767px) {
   canvas {
     width: 50% !important;
-    height: 40% !important;
     z-index: 500;
-    display: block;
     padding: 0;
-    margin: 0;
     margin: auto;
   }
 
@@ -43,10 +40,7 @@ canvas {
 
   .cover {
     padding: 40px 20px 0 !important;
-
   }
-
-
   .cover p {
     font-size: 22px !important;
     line-height: 1.5 !important;
@@ -54,7 +48,6 @@ canvas {
     width: 80%;
     margin: auto;
   }
-
   .cover h1 {
     font-size: 50px !important;
     padding: 20px 0;
@@ -125,6 +118,7 @@ canvas {
   background-color: rgba(0, 255, 255, 0.301);
   color: white;
   border: none;
+  outline: none;
 }
 
 .cover .english:hover,
@@ -276,18 +270,12 @@ h2::after {
   font-size: 14px;
   color: #777;
 }
-
 .card h2,
 .card p,
 .card button {
   margin-top: 10px;
   z-index: 100;
 }
-
-.card button {
-  font-weight: bold;
-}
-
 .card button {
   margin-top: 20px;
   padding: 10px 20px;
@@ -299,6 +287,7 @@ h2::after {
   position: relative;
   transition: 4s linear transform color;
   color: black;
+  font-weight: bold;
   
 }
 .card button:hover{
