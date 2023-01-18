@@ -27,12 +27,13 @@ canvas {
 
 @media (max-width: 767px) {
   canvas {
-    width: 100% !important;
-    height: 60% !important;
+    width: 50% !important;
+    height: 40% !important;
     z-index: 500;
     display: block;
     padding: 0;
     margin: 0;
+    margin: auto;
   }
 
   .cover-container {
@@ -55,8 +56,13 @@ canvas {
   }
 
   .cover h1 {
-    font-size: 40px;
+    font-size: 50px !important;
     padding: 20px 0;
+  }
+}
+@media (max-width: 500px) and (min-width: 341px){
+  .cover h1{
+    font-size: 35px !important;
   }
 }
 @media (max-width: 340px){

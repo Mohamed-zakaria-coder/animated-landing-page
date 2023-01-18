@@ -49,7 +49,7 @@ loader.load("./model/scene.gltf", (gltf) => {
   //   delay: 2,
   //   ease: "back.out(1.7)"
   // });
-  if (window.innerWidth < 768 && window.innerWidth > 400) {
+  if (window.innerWidth < 768 && window.innerWidth > 550) {
     gsap.to(model.scale, {
       x: 60,
       y: 60,
@@ -66,12 +66,18 @@ loader.load("./model/scene.gltf", (gltf) => {
       duration: 1,
       delay: 2,
       ease: "back.out(1.7)",
+    })
+    gsap.to(model.position, {
+      x: 0.8,
+      y: 0,
+      duration: 1,
+      delay: 0.5,
     });
   } else {
     gsap.to(model.scale, {
-      x: 30,
-      y: 30,
-      z: 30,
+      x: 40,
+      y: 40,
+      z: 40,
       duration: 1,
       delay: 2,
       ease: "back.out(1.7)",
@@ -84,7 +90,7 @@ loader.load("./model/scene.gltf", (gltf) => {
     });
   }
   function handleResize() {
-    if (this.window.innerWidth < 768 && this.window.innerWidth > 400) {
+    if (this.window.innerWidth < 768 && this.window.innerWidth > 550) {
       gsap.to(model.scale, {
         x: 60,
         y: 60,
@@ -92,6 +98,12 @@ loader.load("./model/scene.gltf", (gltf) => {
         duration: 1,
         delay: 2,
         ease: "back.out(1.7)",
+      });
+      gsap.to(model.position, {
+        x: 0.1,
+        y: 0,
+        duration: 1,
+        delay: 0.5,
       });
     } else if (this.window.innerWidth > 769) {
       gsap.to(model.scale, {
@@ -101,12 +113,18 @@ loader.load("./model/scene.gltf", (gltf) => {
         duration: 1,
         delay: 2,
         ease: "back.out(1.7)",
+      })
+      gsap.to(model.position, {
+        x: 0.8,
+        y: 0,
+        duration: 1,
+        delay: 0.5,
       });
     } else {
       gsap.to(model.scale, {
-        x: 30,
-        y: 30,
-        z: 30,
+        x: 40,
+        y: 40,
+        z: 40,
         duration: 1,
         delay: 2,
         ease: "back.out(1.7)",
