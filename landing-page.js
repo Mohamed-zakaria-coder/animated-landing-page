@@ -51,12 +51,6 @@ loader.load("./model/scene.gltf", (gltf) => {
       delay: 2,
       ease: "back.out(1.7)",
     })
-    gsap.to(model.position, {
-      x: 0.8,
-      y: 0,
-      duration: 1,
-      delay: 0.5,
-    });
   } else {
     gsap.to(model.scale, {
       x: 40,
@@ -77,12 +71,6 @@ loader.load("./model/scene.gltf", (gltf) => {
         delay: 2,
         ease: "back.out(1.7)",
       });
-      gsap.to(model.position, {
-        x: 0.1,
-        y: 0,
-        duration: 1,
-        delay: 0.5,
-      });
     } else if (window.innerWidth > 769) {
       gsap.to(model.scale, {
         x: 100,
@@ -101,12 +89,6 @@ loader.load("./model/scene.gltf", (gltf) => {
         duration: 1,
         delay: 2,
         ease: "back.out(1.7)",
-      });
-      gsap.to(model.position, {
-        x: 0.1,
-        y: 0,
-        duration: 1,
-        delay: 0.5,
       });
     }
   }

@@ -5,6 +5,7 @@
   font-family: "Josefin Sans", sans-serif;
 }
 
+/* Start Cover */
 canvas {
   /* position: fixed;
     top: 0;
@@ -155,7 +156,7 @@ canvas {
   border-image: url('https://media.istockphoto.com/photos/full-frame-flag-of-spain-flag-picture-id479224872?b=1&k=20&m=479224872&s=170667a&w=0&h=rshpQtaimsvrQO7jwsIdpn1KFBjyGocYDklzRdkbYJA=');
   border-image-slice: 34%;
 }
-
+/* End Cover */
 .flash {
   background-color: rgba(255, 255, 255, 0.788);
   width: 150px;
@@ -179,7 +180,7 @@ canvas {
   border-right: 25px solid transparent;
   left: -25px;
 }
-
+/* Start Cards */
 .packages {
   text-align: center;
   
@@ -246,6 +247,8 @@ h2::after {
   transform: scale(1.1);
 }
 
+
+
 @media (max-width: 767px) {
   .card {
     flex-basis: 44%;
@@ -292,18 +295,18 @@ h2::after {
 }
 .card button:hover{
   animation: btnColor 2s linear;
-
+  
 }
 .card button:hover::before {
   animation-name: fill-btn-left;
   animation-duration: 2s;
-
+  
 }
 
 .card button:hover::after {
   animation-name: fill-btn-right;
   animation-duration: 2s;
-
+  
 }
 
 .card button::before {
@@ -317,8 +320,8 @@ h2::after {
   transform: translateY(-50%);
   z-index: -1;
   background-color: red;
-
-
+  
+  
 }
 
 .card button::after {
@@ -332,14 +335,93 @@ h2::after {
   transform: translateY(-50%);
   z-index: -1;
   background-color: rgba(0, 0, 0, 0.5);
-
+  
 }
 
 .card p {
   width: 80%;
   margin: auto;
 }
-
+/* End Cards */
+/* Start Requests */
+.top-requests{
+  padding: 60px 0;
+  
+}
+.boxes-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.boxes-container .box{
+  position: relative;
+  margin-top: 40px;
+  flex-basis: 22%;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  overflow: hidden;
+}
+.boxes-container .box::before{
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.253);
+  transition: 1s;
+  z-index: -1;
+}
+.boxes-container .box:hover::before{
+  width: 200%;
+  height: 200%;
+  z-index: 1;
+}
+  .boxes-container .box .img-parent{
+  text-align: center;
+}
+@media(max-width: 768px){
+  .boxes-container .box{
+    flex-basis: 45%;
+  }
+}
+@media(max-width: 500px){
+  .boxes-container .box{
+    flex-basis: 90%;
+  }
+}
+.boxes-container .box img{
+  max-width: 100%;
+  width: 250px;
+}
+.box h3{
+  text-align: center;
+  font-size: 24px;
+  padding: 10px 0 25px 0 ;
+}
+.box p{
+ color: #777;
+ line-height: 1.3;
+ width: 90%;
+ margin: auto;
+ text-align: center;
+ font-size: 15px;
+}
+.box h5{
+  text-align: center;
+  padding: 25px 0;
+  font-size: 20px;
+  color: rgb(0, 0, 139);
+}
+.stars{
+  max-width: 100%;
+  width: 100px;
+  margin: auto;
+}
+/* Start Requests */
+/* Start Animation */
 @keyframes fill-btn-left {
 
   0% {
@@ -387,3 +469,4 @@ h2::after {
   }
 
 }
+/* End Animation */
