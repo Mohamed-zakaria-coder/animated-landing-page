@@ -82,12 +82,6 @@ loader.load("./model/scene.gltf", (gltf) => {
       delay: 2,
       ease: "back.out(1.7)",
     });
-    gsap.to(model.position, {
-      x: 0.1,
-      y: 0,
-      duration: 1,
-      delay: 0.5,
-    });
   }
   function handleResize() {
     if (this.window.innerWidth < 768 && this.window.innerWidth > 550) {
@@ -114,12 +108,6 @@ loader.load("./model/scene.gltf", (gltf) => {
         delay: 2,
         ease: "back.out(1.7)",
       })
-      gsap.to(model.position, {
-        x: 0.8,
-        y: 0,
-        duration: 1,
-        delay: 0.5,
-      });
     } else {
       
       gsap.to(model.scale, {
