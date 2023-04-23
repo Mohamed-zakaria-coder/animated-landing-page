@@ -123,7 +123,9 @@ let spanishBtn = document.getElementById("spanish");
 let englishBtn = document.getElementById("english");
 spanishBtn.addEventListener("click", function () {
   coverHeading.textContent = "El mejor reloj";
-  coverText.textContent = "Lorem In Spanish -_-";
+  coverText.textContent = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi et
+  rem similique dolorem doloribus qui dolor, est, quis sit cum nihil
+  beatae, vel nisi. Spanish Version`;
 });
 englishBtn.addEventListener("click", function () {
   coverHeading.textContent = "The Best Watch ";
