@@ -1,10 +1,22 @@
+/* Start Global Rules */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "Josefin Sans", sans-serif;
 }
-
+/* End Global Rules */
+/* Start Scroll */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,.438);
+}
+::-webkit-scrollbar-track {
+  background-color: #ddd;
+}
+/* End Scroll */
 /* Start Navbar */
 .navbar-container {
   box-sizing: border-box;
