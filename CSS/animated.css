@@ -537,6 +537,7 @@ h2::after {
 .footer-parent .footer .links ul {
   padding: 20px;
 }
+
 .footer-parent .footer .links ul li {
   display: flex;
   align-items: center;
@@ -692,7 +693,7 @@ h2::after {
   display: block;
   font-size: 40px;
   padding: 40px 10px 10px;
-  color: #777;
+  color: black;
   
 }
 .services .boxes-parent .box h3 {
